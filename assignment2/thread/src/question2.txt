@@ -1,0 +1,6 @@
+In some cases, the overhead of creating the threads exceeds the tasks performed by them, thus decreasing performance when compared to a single threaded alternative.
+
+Some examples include: Trivial operations on a list of numbers — Multi threading won’t speed up the operations since the time taken by the operations is constant, and other elements of the list may or may not wait for the previous to finish.
+
+Write and read file, multithreading won't speed up the operations for files. Because there is usually permission limitation for simultaneously accessing a file. If one thread is writing a file, others must wait for the previous to finish.
+

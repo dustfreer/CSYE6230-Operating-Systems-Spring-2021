@@ -1,0 +1,3 @@
+Heap memory, global variables are shared among threads.
+
+Program is in ThreadDemo.java

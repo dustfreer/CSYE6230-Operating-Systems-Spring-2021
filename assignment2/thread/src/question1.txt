@@ -1,0 +1,4 @@
+1. Calculator sum of large array. Using Multithreading to separate the array into parts, and simultaneously calculator sum of every part, final sum them up. The example code is in Question1.txt
+
+
+2. Matrix multiplication. Using Multithreading to separate individual rows and columns of the matrices, reducing the wait time of the processor for addition.
