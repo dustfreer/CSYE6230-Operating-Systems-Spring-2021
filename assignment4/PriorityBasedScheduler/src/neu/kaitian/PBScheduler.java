@@ -15,7 +15,7 @@ public class PBScheduler extends Thread{
                     PBJob pbJob = Main.jobsQueue.remove();
                     priority = pbJob.priority;
                     System.out.println("The priority of current thread is " + priority);
-                    Thread.sleep(3000);
+                    Thread.sleep(pbJob.jobTime);
                 }
 
             }

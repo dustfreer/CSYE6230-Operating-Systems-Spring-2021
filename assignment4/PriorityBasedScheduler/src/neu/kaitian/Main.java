@@ -6,8 +6,6 @@ public class Main {
 
     public static PriorityQueue<PBJob> jobsQueue = new PriorityQueue<>();
     public static Object obj = new Object();
-    public static int timeElapsed = 0;
-    public static float averageCompletionTime = 0.0f;
     public static void main(String[] args) {
 
         JobCreatingThread jobsArray[] = new  JobCreatingThread[10];
@@ -27,14 +25,13 @@ public class Main {
         pbScheduler.setName("PB Scheduler");
         pbScheduler.start();
 
-        System.out.println("Test");
+        System.out.println("Start test");
         while(true){
             try {
                 Thread.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            // System.out.println("Sleeping in main thread" + Thread.currentThread().getName());
 
         }
     }
